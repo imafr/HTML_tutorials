@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Poperty</title>
+    <style>
+        /* position types--static(defult),relative,absolute,fixed sticky */
+        .box {
+            border: 2px solid red;
+            width: 170px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        /* #box3 { */
+            /* relative means relative to its actual position and leave a gap at its normal position*/
+            /* position: relative;
+            top: 34px;
+            left: 30px; */
+
+            /* absolute means relative to its parent 
+            or eta jar vitor thakbe tar relative sorbe */
+            /* position: absolute;
+            top: 30px;
+            left:30px ; */
+
+            /* fixed means fixed thakbe se page ta scroll hok na kno 
+            relative to the browser window
+            fixed korle tar porer element ta or jaiga niye nei se o soruk ba na soruk*/
+            /* position: fixed;
+            right: 0px;
+            bottom: 0px; */
+
+            /* sticky dile sudhu top er property kaj kore */
+            /* position: sticky;
+            top: 3px;
+            left: 3px; */
+        /* } */
+
+        .container {
+            border: 2px solid rgb(115, 20, 238);
+            background-color: sandybrown;
+            height: 4444px;
+        }
+
+        #box2:hover {
+            position: relative;
+            top: 23px;
+            right: 23px;
+        }
+
+        #box1:hover {
+            position: relative;
+            top: 23px;
+            right: 23px;
+        }
+
+        #box3:hover {
+            position: relative;
+            top: 23px;
+            right: 23px;
+        }
+
+        #box4:hover {
+            position: relative;
+            top: 23px;
+            right: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

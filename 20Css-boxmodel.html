@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            border: 0px;
+            /* * diye boxsizing dile sob element er jonno hoye jai */
+
+        }
+        body{
+            background-color:#374374;
+        }
+        .container {
+            background-color: #79e8f1;
+            border: 3px solid rgb(233 18 201);
+            padding: 27px 22px 43px 30px;
+            /* padding border r content er moddhe gap dei */
+            /* padding-top,left,right, dile oi dikei padding aasbe */
+            /* padding:23px 34px 56px 32px; means padding = top right bottom left */
+            /* padding 34px 44px; means padding:y(top/bottom) x(left/right) */
+            
+            margin: 33px 41px;
+            /* margin 2 ti container er moddhe gap dei */
+            /* margin:23px 34px 56px 32px; means margin = top right bottom left */
+            /* margin 34px 44px; means margin:y(top/bottom) x(left/right) */
+            /* eki rokom margin-top,right,left,bottom e oi dike margin aase */
+            
+            /* box-sizing: border-box; */
+            /* box sizing border box korle width ja debo tai thake padding ba margin barano ba komano dpend kore na */
+        }
+    </style>
+    <!-- element->> padding->> border->> margin -->
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+    </div>
+
+</body>
+
+</html>

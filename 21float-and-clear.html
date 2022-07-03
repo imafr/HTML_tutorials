@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        .container {
+            width: 650px;
+            border: 2px solid red;
+            margin: 68px auto;
+            background-color: rgb(228, 101, 89);
+            /* margin auto korle element x o y er majhe chole aase */
+        }
+
+        .item {
+            border: 2px solid green;
+            padding: 4px 24px;
+            margin: 4px 10px;
+            background-color: #8dd3ce;
+        }
+
+        #fruits {
+            float: left;
+            width: 38%;
+            text-align: center;
+            text-align: justify;
+        }
+
+        #computer {
+            float: right;
+            width: 38%;
+            text-align: center;
+            text-align: justify;
+        }
+
+        #stationary {
+            clear: both;
+            width: 89%;
+            text-align: center;
+        }
+        #stationary1 {
+            clear: both;
+            width: 89%;
+            text-align: center;
+        }
+
+        h1 {
+            width: 295px;
+            margin: auto;
+            /* or text aline center korleo ota middle a aasto */
+        }
+
+        /* float means parent er kon dike float korabp */
+        /* clear:both means kono floated element jeno over lap na kore */
+        /* text aline means text er suru hoyar style*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits are here</h3>
+            <p id="fp" class="p1">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                sapiente, tempore ratione optio veniam non, incidunt commodi alias consequuntur illo, sed in! </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer are here</h3>
+            <p id="cp" class="p1">Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                corrupti obcaecati nam quia, aut ipsam exercitationem, commodi sapiente ratione, quod deserunt
+                repellendus! </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>items are here</h3>
+            <p id="sp" class="p1">Lorem ipsum dolor sit.</p>
+        </div>
+        <div id="stationary1" class="item">
+            <h3>foods are here</h3>
+            <p id="sp1" class="p1">Lorem ipsum dolor sit.</p>
+        </div>
+    </div>
+</body>
+
+</html>

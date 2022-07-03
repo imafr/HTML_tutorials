@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+        
+
+        #box1 {
+            /* z-index holo-- jokhon kono element er position property use kora hoi tokhon jodi 2 ti element ek jaigai
+            overlap kore tokhon ekta element show kore.amra jodi z-index set kori jar z-index besi hbe seta show korbe */
+            /* position absolute,reltive,fixed or stiky na hole hbe na*/
+            position: relative;
+            top:70px;
+            z-index:12;
+            background-color: red;
+        }
+
+        #box2 {
+            position: relative;
+            top: 44px;
+            z-index: 0;
+            /* visibility hidden mane holo oi element ta visible hbe na kintu or jaiga ta preserve thakbe */
+            /* display none mane holo oi element ta gayeb hoye jabesathe or jaiga tao */
+            /* visibility: hidden; */
+            /* display: none; */
+            background-color: blue;
+        }
+
+        #box3 {
+            background-color: green;
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- $ lagale por por 1,2,3,4 hoye jai jemon niche -->
+    <!-- div.box#box$ korar jonno nicher 4 ti line holo -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

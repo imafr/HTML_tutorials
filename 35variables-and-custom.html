@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables and custom properties</title>
+    <style>
+        /* :root diye tar moddhe variable gulo define korle alada alada vabe prottec ta element e define korar dorkar nei */
+        :root {
+            --box-color: rgba(25, 209, 77, 0.646);
+            --primery-color: red;
+            --box1: rgba(175, 209, 25, 0.646);
+            --maxw:500px;
+        }
+        .box {
+            /* variable mane holo ekbar define kore bar abr babohar kora  */
+            /* ekta variable ekta class er vitor apply hbe onno element e lagate gele or css e abar define korte hbe */
+            /* --box-color:red; ekhane "--" diye name diye kono property define kore pore kono css e var() er baracate er vitor vore variable ta likhte hbe*/
+            --box-color: rgba(25, 209, 77, 0.646);
+            --box1: rgba(175, 209, 25, 0.646);
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid var(--box1);
+            margin: 2px 9px;
+        }
+        .con{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--primery-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size unit</title>
+    <style>
+        html {
+            font-size: 25px;
+        }
+        /* jodi keo puro page er height nite chai tahole height:100vh dite hoi 100 vh mane 100 veiwport height mane jotota deka jai toto ta 
+        width er jonno same */
+        .con {
+            height: 100vh;
+            width: 100vw;
+            font-size: 10px;
+            border: 2px solid red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* 5em means parent er joto font-size hbe toto gun size child er first property er hbe 
+        kintu second property er size 3em hole size first property er 3 gun hbe */
+        #d1 {
+            font-size: 5em;
+            border: 2em solid green;
+        }
+
+        /* 3rem means html er font size er 5 gun */
+        /* sob property ei joto rem toto gun,em er moto second property first property er upor depend kore na */
+        #d2 {
+            font-size: 3rem;
+            border: 2rem solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <h1 id="d1">This is first heading</h1>
+        <h1 id="d2">This is second heading</h1>
+        <h1 id="d3">This is third heading</h1>
+    </div>
+</body>
+
+</html>

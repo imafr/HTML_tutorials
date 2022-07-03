@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4AM Fitness</title>
+    <link rel="stylesheet" href="/web dev/code with harry/salman.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            background: url(fitness.jpg);
+            padding: 0px;
+            margin: 0px;
+            height: 2000px;
+        }
+
+        .left {
+            display: inline-block;
+            border: 2px solid #e57c0ffa;
+            position: absolute;
+            left: 24px;
+            top: 15px;
+            line-height: 13px;
+
+        }
+
+        .mid {
+            display: block;
+            width: 35%;
+            margin: 15px auto;
+            border: 2px solid greenyellow;
+        }
+
+        .right {
+            position: absolute;
+            right: 8px;
+            top: 15px;
+            display: inline-block;
+
+        }
+
+        .nev li {
+            display: inline-block;
+            padding: 0px 23px;
+
+        }
+
+        .nev li a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .nev li a:hover,
+        .nev li a.active {
+            text-decoration: underline;
+            color: thistle;
+        }
+
+        .left img {
+            width: 79px;
+        }
+
+        .left div.l1 {
+            font-size: 11px;
+
+
+        }
+
+        .btn {
+            color: white;
+            margin: 0px 7px;
+            border: 2px solid rgb(20, 19, 19);
+            background-color: rgba(179, 179, 179, 0.81);
+            border-radius: 12px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(199, 206, 206);
+        }
+
+        .con {
+            color: blanchedalmond;
+            border: 2px solid white;
+            margin:98px 588px;
+            padding: 10px 46px;
+            width:15%;
+        }
+        .form input{
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="/web dev/code with harry/fitness logo.jpg" alt="">
+            <div class="l1">4AM FITNESS</div>
+        </div>
+        <!-- mid box for nev bar -->
+        <div class="mid">
+            <ul class="nev">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button for buttons -->
+        <div class="right">
+            <button class="btn">Feedback</button>
+            <button class="btn">Email us</button>
+           
+        </div>
+    </header>
+    <div class="con">
+        <h3>Fill the form to join our gym</h3>
+        <form action="salman.php">
+            <div class="form">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Adress">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Weight">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Contact">
+            </div>
+            <div class="form">
+                <input type="button" value="Submit">
+            <input type="reset" value="reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>
+        h1{
+            background-color: aqua;
+            border: 2px solid rgb(255, 0, 0);
+            text-align: center;
+           font-weight:bold;
+        }
+
+        /* jodi p kono li er vitor thake ja kono div er vitor thake */
+        /* div  p{
+            color: #ca5035;
+            font-weight: bold;
+            background-color: rgb(187, 213, 21);
+        } */
+
+        /* div er vitor je kono p thakle tar jonno apply hbe  */
+        /* div  p{
+            color: #ca5035;
+            font-weight: bold;
+            background-color: rgb(187, 213, 21);
+        } */
+
+        /* div er direct child emon p sudhu effect hbe  '>' sing dile*/
+        /* div > p{
+            color: #ca5035;
+            font-weight: bold;
+            background-color: rgb(187, 213, 21);
+        } */
+
+        /* div + p dile tara effective hbe j p gulor age div accha */
+        /* div + p{
+            color: white;
+            background-color: yellowgreen;
+        } */
+    </style>
+</head>
+<body>
+    <h1> This is more on css</h1>
+    <div class="con">
+        <div class="row">
+            <ul>
+                <li><p>This is another paragraph inside ul  </p></li>
+            </ul>
+            <p>this is direct child paragraph row div</p>
+        </div>
+        <p>This is direct child paragraph of con div</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

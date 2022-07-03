@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flexbox Toturial</title>
+    <style>
+        .con {
+            height: 544px;
+            width: 100%;
+            border: 2px solid red;
+            /* display flex korle div ta flex box er property mene chole */
+            display: flex;
+            /* to understand flex properties for a flex container uncomment the 4,5,6th box */
+            /* <----flex properties for a flex container----> */
+
+            /*<---- flex-direction:--------------------------------------------------------------------> */
+            /* default value of flex direction is row */
+            flex-direction: row;
+            flex-direction: column;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* <----flex-wrap:--------------------------------------------------------------------------> */
+            /* defullt flex-wrap nowrap */
+            /* flex-wrap:wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* <----flex-flow:=flex-direction & flexwrap------------------------------------------------> */
+            /* flex-flow diye flex-direction and flex-wrap dutoi set kora hoi */
+            /* flex-flow: row wrap; */
+
+            /* <----justify-content:-------------------------------------------------------------------->*/
+            /* justify-content only work for flex direction:row and row reverse
+            kintu element er before content add kore background dile and flex direction column korle background ta puro tai cheye jai*/
+            /* justify content center korle sob element center hoye jai horixentali(x axis) */
+            justify-content: center;
+            /* space between korle sob element er gap same hoi */
+            /* justify-content: space-between; */
+            /* space evenly mane sob element er gap same hoi including starting and end */
+            /* justify-content: space-evenly; */
+            /* space around e sob element left o right e nidisto gap pai er fole por por duto element er gap ile ekta boro space paoa jai */
+            /* justify-content: space-around; */
+
+            /* <----align-items: -----------------------------------------------------------------------> */
+            /*  defult align-items: flex-start; jeta oporei thake */
+            /* align-items: center; korle sob element vertiv]cally center hoye jai(y axis) */
+            align-items:center ;
+            /* align-items: flex-end; korle sob element y axis borabar niche chole jai */
+            /* align-items: flex-end; */
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        /*  to understand flex properties for a flex element comment down the 4,5,6th box> */
+        /* flex properties for a flex element-----------------------------------------------------------------------------------------------------> */
+        #item1 {
+            /* order---------------------------------------------------------------------------------------------------------------------> */
+            /* j element er order besi hbe se element ses e jabe so jar order kom hbe se first e thakbe and evabe arrenge hbe */
+            /* order: 77; */
+
+            /* flex-grow: ---------------------------------------------------------------------------------------------------------------> */
+            /*flex grow er value jar besi hbe se toto barbe jokhon tader barano(container ta boro kora hbe) hbe  */
+            /* flex-grow: 2; */
+
+            /* flex-shrink: joto besi hbe element er srink(container ta choto korle) korle se toto choto hbe  */
+            /* flex-shrink: 2; */
+
+            /* flex-basis: --------------------------------------------------------------------------------------------------------------> */
+            /* when flex-direction is set to row flex direction control width */
+            /* when flex-direction is set to column flex direction control height */
+            /* flex-basis: 200px; */
+
+            /* flex: <flex-grow> <flex-shrink> <flex-basis>----------------------------------------------------------------------------->  */
+            /* flex: 2 2 200px; */
+
+            /* align-self: -------------------------------------------------------------------------------------------------------------> */
+            /* align-self: Allows the default alignment along the cross axis to be overridden for individual flex items. */
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            align-self: center;
+        }
+
+        #item2 {
+            order: 3;
+            /* flex-grow: 3; */
+        }
+
+        #item3 {
+            order: 4;
+        }
+        .con::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.4;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is flexbox toturial</h1>
+    <div class="con">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <div class="item" id="item4">Fourth box</div>
+        <div class="item" id="item5">Fifth box</div>
+        <div class="item" id="item6">Sixth box</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css trans form</title>
+    <style>
+        *{
+            border: 2px solid yellow;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 70vh ;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cyan;
+            width: 150px;
+            height: 150px;
+            transition: all 1s ease-in-out;
+        }
+        /* transform-------------------------------------------> */
+        .box:hover{
+            /* transform: rotate(350deg); */
+            /* transform:translateX(230px); */
+            /* transform:translateY(230px); */
+            transform: translate(230px,230px);
+            /* transform:scale(2); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+
+</html>

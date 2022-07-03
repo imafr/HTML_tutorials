@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+
+        }
+
+        /* body te background image dile easy hoi kintu background image er jonno lekha gulo dekha jai na,
+        opacity(jeta background image k transparent kore dei)kom korle text er o transparent kom hoye jai
+        tai before lagiye background image diye take transparent kora hoi jar fole text gulo valo kore dekha jai*/
+
+        header::before {
+            content: "";
+            background: url("https://source.unsplash.com/user/erondu/1600x900") no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .ul1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        ul li {
+            list-style: none;
+            padding: 13px 16px;
+        }
+
+        /* section::before likhle content ta section er age chole aase 
+         ei rokom pseudo selector e "content" thaktei hbe  
+        x::after ba before deoa mane holo body te kono element x er vitor jothacrome first and last e dhuke jai */
+
+        /* section::after {
+            content: "This is a content";
+        } */
+
+        section {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid cyan;
+            align-items: center;
+            padding: 23px;
+            margin: 3px 74px;
+        }
+
+        h3 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="ul1">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to coding World</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis facere maiores pariatur iste. Neque.
+            </p>
+        </section>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quarry</title>
+    <style>
+        .box {
+            font-size: 50px;
+            background-color: cadetblue;
+            color: yellow;
+            text-align: center;
+            display: none;
+        }
+
+        /* media quarry is like if condition in programing */
+     /* @media (max-width:500px){     } 
+     etar mane holo () er vitor je sorto thakbe seta jodi purno hoi tobe {} er vitor er property gulo lagu hbe*/
+
+     /* nicher case e sorto accha (max width:500px).jokhon togle device toolbar responsive kore choto boro kora hbe tokhon width 0-500px er moddhe ele box1 er
+     display block hoye jabe.tai oporer display none ta overwrite hoye block hoye jabe  */
+
+     /* only screen kora hoi karon amra sudhu baki media type k support kori na amra sudhu screen media type support kori*/
+     @media only screen and (max-width:300px){
+         #box1{
+             display: block;
+             background-color: aqua;
+             color: black;
+         }
+     }
+     @media only screen and (max-width:500px) and (min-width:300px){
+         #box2{
+             display: block;
+             background-color: bisque;
+             color: red;
+         }
+     }
+     @media only screen and (max-width:800px) and (min-width:500px)
+     {
+         #box3{
+             display: block;
+             background-color: blueviolet;
+         }
+     }
+     @media only screen and (min-width:800px) 
+     {
+         #box4{
+             display: block;
+             background-color: blueviolet;
+         }
+     }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">i am an iphone</div>
+    <div class="box" id="box2">i am a tablet</div>
+    <div class="box" id="box3">i am a computer</div>
+    <div class="box" id="box4">i am a wide screen computer</div>
+</body>
+
+</html>

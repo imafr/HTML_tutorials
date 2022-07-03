@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS AND INPUT</title>
+
+</head>
+
+<body>
+    <h2>This is html forms toturial</h2>
+    <!-- form er action hlo jkhane data gulo goma hbe -->
+    <!-- div lagale form er data vacant gulo ekline e aase na -->
+    <!-- input er aage ja likhbo seta form er vacant er aage bosbe -->
+    <form action="backend.php">
+        <!-- label hlo emon ekta tag jar for e j input er id thakbe seta click korle fill kora jabe -->
+        <div>
+            <label for="name"> Name:</label>
+            <input type="text" name="my name" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="r1"> Role: </label>
+            <input type="text" name="my role " id="r1">
+        </div>
+        <br>
+        <div>
+            <label for="id"> Id: </label>
+            <input type="text" name="my Id" id="id">
+        </div>
+        <br>
+        <div>
+            <label for="em"> email: </label>
+            <input type="email" name="my email" id="em">
+        </div>
+        <br>
+        <div>
+            <label for="bd">Birthday: </label>
+            <input type="date" name="Birthday" id="bd">
+        </div>
+        <br>
+        <div>
+            bonus: <input type="number" name="bonus">
+        </div>
+        <br>
+        <!-- submit botton e ki likha thakbe seta value te likhte hoi -->
+        <!-- checkbox input e sudhu tick mara hoi -->
+        <div>
+            <label for="cast"> OBC:</label>
+            <input type="checkbox" value="obc or not" id="cast">
+        </div>
+        <br>
+        <!-- radio input e j jodi name same thake to ektai check deoa hbe -->
+        <div>
+            gender:Male <input type="radio" Name="my gender">Female<input type="radio" Name="my gender">Other <input
+                type="radio" Name="my gender">
+        </div>
+        <br>
+        <div>
+            Write about yourelf: <br><textarea name="my text" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <!-- select tag use korle floating option aasbe -->
+        <!-- value er por selected likhle oi option ta automatic select hoye jabe -->
+        <div>
+            <label for="car">Car</label>
+            <select name="my car" id="car">
+                <option value="indica">indica</option>
+                <option value="lambourgini">lambourgini</option>
+                <option value="audi">audi</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+
+</html>

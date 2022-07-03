@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribute and nth child pseudo selectors</title>
+    <style>
+        .con {
+            /* display: block; */
+            width: 233px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        /* input[type='text'] holo ekdhoroner pseudo selector jeta sei "input" k effect kore jar type =text*/
+        input[type='text'] {
+            border: 2px solid rgb(248, 54, 19);
+        }
+        input[type='email']{
+            border: 2px solid blue;
+        }
+
+        /* niche kotogulo example anchor type r target er  */
+        a[target] {
+            color: green;
+        }
+
+        a[target='_self'] {
+            color: rgb(32, 146, 218);
+        }
+
+        /* nth child css------------------------------------> */
+        /* only apply css in 3rd li */
+        /* li:nth-child(3){
+            color: cyan;
+        } */
+
+        /* li:nth-child(2n)--mane 2,4,6,8 only even li gulo te css debe */
+        li:nth-child(2n){
+            color: red;
+        }
+
+        /* li:nth-child(2n-1) odd li gulo te css debe */
+        li:nth-child(2n-1){
+            color: greenyellow;
+        }
+
+
+         /* li:nth-child(3n) 3,6,9.... li gulo target korbe  */
+        /* li:nth-child(3n){
+            color: greenyellow;
+        } */
+        /* odd li gulo te css apply hoi */
+        li:nth-child(odd){
+            background-color: rgb(17, 20, 20);
+        }
+        /* even li gulo te css apply hoi */
+        li:nth-child(even){
+            background-color: rgb(155, 231, 31);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <h1><a href="http://google.com" target="_blank">go to google </a></h1>
+        <h1><a href="http://facebook.com" target="_self">go to facebook </a></h1>
+        <form action="salman.php" class="f-control">
+            Name:<input type="text" name="my name">
+            Password:<input type="password" name="my password">
+            Email: <input type="email" name="my email" >
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+            <li class="item" id="item9">item9</li>
+            <li class="item" id="item10">item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

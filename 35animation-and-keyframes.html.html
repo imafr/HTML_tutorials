@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Keyferms</title>
+    <style>
+        .con {
+
+            background-color: black;
+        }
+
+        /* animtion--------------------------------------------------------------------------> */
+        /* 1)-animation-name: name ja khusi hote pare */
+        /* 2)-animation-duration:2s;kotokhon lagabe ekta animation ses korte */
+        /* 3)-animation-iteration-count: 5; means ekbar refresh er jonno koto bar cholbe*/
+        /* 4)-animation-fill-mode: forwards; means animation ta ses hobar por 'to' er vitor ja property thakbe seta apply hoye jabe*/
+        /* 5)-animation-timing-function: ease-out;ei property er dara animation 1st, ses,o moddhe er speed control hoi */
+        /* 6)- animation-delay: 2s;means animation suru hov=bar somoi 2s wait korbe */
+        /* 7)-  animation-direction: reverse; means reverse hbe animation */
+
+        /* egulo set korar por @keyframes likhe animation tar nam diye 'from' and 'to' duto tag lagate hoi. er mane animation kotha theke kotha projonto hbe */
+        /* sudhu to and from na kore % diye korle hoi */
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            position: relative;
+            /* top: 250px;
+            left: 250px; */
+            animation-name: salman1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode:alternate;
+            animation-timing-function: ease-out;
+            animation-delay: 2s;
+            animation-direction: reverse; */
+            /* all properties in one line----------------------------->like this */
+            /* animation: animation-name animation-duration animation-timing-function animation-deley animation-iteration-count animation fill mode; */
+            
+        }
+
+        @keyframes salman {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 400px;
+            }
+        }
+
+
+        /* @keyframes salman1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 250px;
+            }
+
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            75% {
+                top: 250px;
+                left: 0px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        } */
+        @keyframes salman1{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            33%{
+                top: 375px;
+                left: 635px;
+                background-color: red;
+            }
+            67%{
+                top: 0px;
+                left: 1270px;
+                background-color: seashell;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            
+                }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="box">
+            a
+        </div>
+    </div>
+</body>
+
+</html>

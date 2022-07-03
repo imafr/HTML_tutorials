@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadoe</title>
+    <style>
+.con{
+    display: flex;
+}
+.card{
+    /* border: 2px solid red; */
+    padding: 20px 34px;
+    margin: 23px 12px;
+    background-color: aqua;
+    /* box shadow property te box e shadow paoa jai */
+    /* box-shadow: 10px 13px green; means shadow in x-axis y-axis and shadow color*/
+    /* box-shadow:-9px -8px green; minus thakle shadow upor dike hoi ar positive thakle nicher dike */
+    box-shadow:9px 8px green;
+
+    /* box-shadow:9px 8px 10px green;=xaxis,yaxis,blur-radius,shadow color */
+    box-shadow:9px 8px 10px green;
+
+    /* box-shadow:9px 8px 10px green;shadow in x-axis y-axis blur-radius spread-radius color */
+    box-shadow:9px 8px 10px 22px green;
+
+    /* inset dile box er vitor dike shadow dekha jai */
+    box-shadow: inset 9px 8px green;
+    /* jodi ami miltiple shadow dite chai  tobe nicher moto likhte hbe*/
+    /* sudhu coma diye diye jete hbe multiple shadow laganor jonno */
+    box-shadow: 8px 9px green,8px 9px red,8px 9px blue;
+}
+.card h2{
+    /* text-shadow: 2px 2px yellow;--x-axis y-axis shadow color same like box shadow */
+    text-shadow: 2px 2px yellow;
+}
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="card" id="card1">
+            <h2>This is HTML toturial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam explicabo ipsum!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is C++ toturial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam explicabo ipsum!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is C toturial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam explicabo ipsum!</p>
+        </div>
+    </div>
+</body>
+v
+
+</html>
